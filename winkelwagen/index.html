@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Card</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b273e788b2.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <section class="checkout a-popup" id="checkoutWindow">
+        <ul class="checkout__list">
+            <li class="checkout__listItem">
+                <img class="checkout__image" src="img/cloneTurboTank.webp" alt="">
+                <p class="checkout__title">tank</p>
+                <p id="js--tank" class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img class="checkout__image" src="img/gunship.webp" alt="">
+                <p class="checkout__title">gunship</p>
+                <p id="js--gunship" class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img class="checkout__image" src="img/falcon.webp" alt="">
+                <p class="checkout__title">falcon</p>
+                <p id="js--falcon" class="checkout__amount"></p>
+            </li>
+        </ul>
+    </section>
+
+    <article class="modal" id="js--shoppingModal">✔added to cart</article>
+    <button class="shoppingCart" id="checkoutButton">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-arrow-left" style="display: none;"></i>
+        <div class="shoppingCart__message">0</div>
+    </button>
+    <main>
+        <ul class="legos">
+            <li class="legos__lego a-popup">
+                <figure class="legos__figure">
+                    <img class="legos__image" src="img/cloneTurboTank.webp" alt="">
+                </figure>
+                <section class="legos__body">
+                    <h2 class="legos__h2">€50</h2>
+                    <h3 class="legos__h3">Tank</h3>
+                    <div class="legos__stars">★★★★★</div>
+                    <button data-product="tank" class="legos__button">Add to Card</button>
+                </section>
+            </li>
+            <l class="legos__lego a-popup">
+                <figure class="legos__figure">
+                    <img class="legos__image" src="img/gunship.webp" alt="">
+                </figure>
+                <section class="legos__body">
+                    <h2 class="legos__h2">€60</h2>
+                    <h3 class="legos__h3">gunship</h3>
+                    <div class="legos__stars">★★★★★</div>
+                    <button data-product="gunship" class="legos__button">Add to Card</button>
+                </section>
+            </l>
+            <li class="legos__lego legos__lego--third a-popup">
+                <figure class="legos__figure">
+                    <img class="legos__image" src="img/falcon.webp" alt="">
+                </figure>
+                <section class="legos__body">
+                    <h2 class="legos__h2">€100</h2>
+                    <h3 class="legos__h3">Falcon</h3>
+                    <div class="legos__stars">★★★★★</div>
+                    <button data-product="falcon" class="legos__button">Add to Card</button>
+                </section>
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
+
+<!--Credits: Daniel Vermeulen-->
